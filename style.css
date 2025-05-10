@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.geral{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('mine.jpg');
+    background-size: cover;
+    background-color: #d5580a;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#borda-sts{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 350px;
+    background-image: linear-gradient(45deg, rgb(235, 159, 17), rgb(251, 145, 7));
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    width: 80%; 
+    max-width: 400px; 
+    background-color: #e86c1f;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    
+}
+#Acerte{
+    color: rgb(255, 255, 255);
+}
+form {
+    display: flex;
+    margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+#gif{
+    display: none;
+}
+
+#numero{
+    height: 40px;
+    border-radius: 6px;
+    border: 2px solid rgb(221, 11, 11);
+    margin-bottom: 5px;
+}
+#numero:focus{
+    border: 2px solid red;
+    outline: none;
+}
+#bt{
+    position: relative;
+    bottom: 10px;
+    height: 30px;
+    width: 120px;
+    color: #ffffff;
+    background-color: #e02706;
+    border: 2px solid rgb(255, 237, 237);
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+#bt:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#h1-jogo{
+    color: aliceblue;
+}
+.container-jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(to right, rgb(238, 103, 25), rgb(250, 165, 95));
+    border-radius: 5px;
+    gap: 20px;
+    box-shadow: 0px 0px 0px 0.5px #0000007b;
+}
+.c-jogo{
+    height: 200px;
+    width: 200px;
+    background-color: #000000;
+}
+
+#jogo{
+    width: 200px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    max-width: 300px; 
+}
+
+.input input{
+    height: 35px;
+    border-radius: 8px;
+    border: 2px solid rgb(207, 93, 93);
+}
+
+.input input:focus {
+    border-color: #e60000; 
+    box-shadow: 0 0 5px rgba(230, 0, 0, 0.5);
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    color: #800f0f;
+}
+
+#botao {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ff2c07;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#botao:hover {
+    background-color: #e02706;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+#logout {
+    width: 100%;
+    max-width: 225px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(104, 33, 33, 0.669);
+    background-color: rgb(255, 44, 7);
+    font-weight: bold;
+    color: white;
+}
+
+#crb {
+    height: 120px;
+    margin-left: 15px;
+}
+
+#dash {
+    color: rgb(31, 99, 25);
+}
+
+
+#botao:disabled {
+    background-color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        max-width: 350px; 
+        height: auto; 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    #botao {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #logout {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; 
+    }
+
+    .container {
+        width: 90%; 
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .input input {
+        font-size: 14px;
+    }
+
+    #botao {
+        font-size: 14px; 
+    }
+}
