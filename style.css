@@ -103,7 +103,7 @@ form {
     align-items: center;
     justify-content: center;
     height: 400px;
-    width: 300px;
+    width: 350px;
     background-image: linear-gradient(to right, rgb(238, 103, 25), rgb(250, 165, 95));
     border-radius: 5px;
     gap: 20px;
